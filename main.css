@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;900&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;0,900;1,400&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: ;
+}
+ body{
+    background: #fffdd0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background: #0b1c35;
+}
+.logo{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-left: -100px;
+}
+.navlinks{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.navlinks li{
+    list-style: none;
+}
+.navlinks .reg{
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    margin-top: -10px;
+}
+.navlinks .reg a{
+    color: #fff;
+    font-weight: 500;
+    padding: 8px;
+}
+.navlinks .reg:hover{
+   opacity: 0.99;
+}
+.navlinks a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.navlinks a:hover{
+    opacity: 0.9;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.burger .line1{
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px;
+}
+.burger .line2{
+    width: 15px;
+    height: 2px;
+    left: 5px;
+    background-color: #fff;
+    margin-left: 15px; 
+    
+}
+.burger .line3{
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .navlinks{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .navlinks{
+        position: absolute;
+        right: 0px;
+        height: 72vh;
+        top: 8vh;
+        background: #0b1c35;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    .burger{
+        display: block;
+        margin-right: -100px;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+       opacity: 0; 
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*HERO*/
+
+.hero{
+    min-height: 80vh;
+    width: 100%;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;  
+    background: linear-gradient(360deg, #0b1c35 38.03%, rgba(255, 255, 255, 0) 90.73%), url('images/images%20(25).jpeg') no-repeat;
+    background-size: cover;
+    z-index: 1;  
+}
+
+
+.hero-info h1{
+    font-size: 45px;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 45px;
+    font-weight: 700;
+    z-index: 999;
+    color: #fffdd0;
+    letter-spacing: 0.1rem;
+}
+.hero-info p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 16px;
+    color: #fff;
+}
+.hero button{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    color: #0b1c35;
+    border: 2px solid #0b1c35;
+    display: inline-block;
+    background: white;
+    opacity: 0.7;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+.hero button:hover{
+    background: darkred;
+    opacity: 0.5;
+    color: #fff;
+    transition: 0.3s ease all;
+}
+/*ABOUT*/
+
+
+.about{
+    width: 100%;
+    min-height: 50vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.about h1{
+    text-align: start;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #0b1c35;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+.about p{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: start;
+}
+.about img{
+    width: 100%;
+}
+.abstrategy{
+    width: auto;
+    min-height: 30vh;
+    padding: 40px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #006994;
+}
+.abstrategy img{
+    max-width: 80%;
+}
+.about-strategy .as h1{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #0b1c35;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+.about-strategy .as p{
+    font-family:'lato', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: start;
+}
+
+/*GET STARTED*/
+.get{
+    height: 44vh;
+    margin-top: 35px;
+    background-image: linear-gradient(89.37deg, #006994 54.03%, rgba(255, 255, 255, 0) 99.73%),  url('images/businessman-hand-holding-throwing-virtual-dart-target-board-black-wall-business-investment-target-concept_50039-1488.jpg');
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.getstarted p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: start;
+    color: #fff;
+}
+.getstarted .cl{
+    width: 100px;
+    height: 40px;
+    background: #006994;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+}
+.getstarted a{
+    text-decoration: none;
+    position: relative;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+.getstarted a:hover{
+    color: #fff;
+}
+.getstarted{
+    padding: 40px;
+}
+.ges{
+    margin-top: 50px;
+    padding: 40px;
+    text-align: center;
+    height: auto;
+    background-color: #006994;
+    
+}
+.gs h3{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif; 
+    line-height: 38px;
+    text-align: center;
+    color: #0b1c35;
+}
+.gs p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;  
+}
+
+.ca h4{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.ca p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+.ca img{
+    width: 50%;
+    margin-top: 30px;
+}
+.ca a{
+    text-decoration: none;
+    color: #0b1c35;
+}
+.ca a:hover{
+    color: #fff;
+}
+.ca:hover{
+    opacity: 0.8;
+}
+
+/*WHY CHOOSE US*/
+
+.wcu{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.wcus h2{
+    font-size: 30px;
+    color: #0b1c35;
+    letter-spacing: 0.1rem;
+}
+.wcus p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.wcu i{
+    color: #f9712e;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+.wcu h3{
+    color: #0b1c35;
+    letter-spacing: 0.1rem;
+}
+.wcu p{
+    font-size: 15px;
+    line-height: 25px;
+     margin-top: 10px;
+}
+
+/*RISK STRATEGY*/
+
+
+.riskm{
+    padding: 40px;
+    background-color: #006994;
+}
+.riskm h2{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #0b1c35;
+}
+.riskm h2 i{
+    color: #0b1c35;
+    padding-right: 10px;
+    
+}
+.riskm p{
+  font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #0b1c35;
+    font-weight: 500;
+}
+
+/*TESTIMONIAL*/
+.carousel-item{
+    height: 40vh;
+    background-color:  #fffdd0;
+    position: relative; 
+    margin-top: 40px;
+    
+}
+.carousel-item h5{
+    font-size: 20px;
+    color: #0b1c35;
+    font-weight: 600;
+}
+.carousel-item p{
+    color: #0b1c35;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+}
+.carousel ol li{
+    color: #0b1c35;
+}
+.contaner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon{
+    background-color: #0b1c35;
+    
+}
+.carousel-indicators li{
+    color: #0b1c35;
+    display: none;
+}
+/*MESSAGE*/
+
+
+.form{
+    width: 300px;
+    height: 330px;
+    margin-top: 30px;
+}
+
+.form h3{
+    font-family: 'Poppins', sans-serif;
+    color: #0b1c35;
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.form p{
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.container .msg{
+    height: 100px;
+}
+.form input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    position: relative;
+    outline: none;
+    background: #fff;
+    margin-top: 10px;
+    border: 0.8px solid #0b1c25;
+    padding: 10px;
+    outline: none;
+    font-family: 'lato', sans-serif;
+    
+}
+.form button{
+    width: 80px;
+    height: 30px;
+    margin-top: 5px;
+    background: #0b1c35;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #0b1c35;
+    margin-left: 10px;
+}
+.form button:hover{
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+.container label{
+    position: relative;
+    top: -10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 11px;
+    color: #0b1c35;
+    pointer-events: none;
+    transition: all 0.2s;
+}
+.form input:focus + label{
+    top: -30px;
+}
+.form input:valid + label{
+    top: -30px;
+}
+.form textarea{
+    width: 100%;
+    height: 100px;
+    border: none;
+    position: relative;
+    outline: none;
+    background: #fff;
+    margin-top: 10px;
+    border: 0.8px solid #0b1c25;
+    padding: 10px;
+    outline: none;
+    font-family: 'lato', sans-serif;
+}
+/*footer*/
+.footer{
+    width: 100%;
+    height: auto;
+    background: #f9e29c;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.about__us h3{
+    font-size: 20px;
+    color: #0b1c35;
+    margin-top: 20px;
+}
+.about__us li{
+    list-style: none;
+    padding-top: 4px;
+    font-size: 13px;
+    font-family: 'lato', sans-serif;
+    line-height: 20px;
+    margin-top: 8px;
+}
+.about__us li a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+}
+.ghelp h3{
+    font-size: 20px;
+    color: #0b1c35; 
+    margin-top: 20px;
+}
+.ghelp li{
+    list-style: none;
+    padding-top: 4px;
+    font-size: 15px;
+    font-family: 'lato', sans-serif;
+    line-height: 20px;
+    margin-top: 8px; 
+}
+.ghelp li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+}
+.legal h3{
+    font-size: 20px;
+    color: #0b1c35; 
+    margin-top: 20px;
+}
+.legal li{
+    list-style: none;
+    padding-top: 4px;
+    font-size: 15px;
+    font-family: 'lato', sans-serif;
+    line-height: 20px;
+    margin-top: 8px; 
+}
+.legal li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #000; 
+}
+.contact-us{
+    margin-left: -20px;
+}
+.contact-us h3{
+    font-size: 20px;
+    color: #0b1c35; 
+    margin-top: 20px;
+    margin-left: 18px;
+}
+.contact-us p{
+    padding-top: 2px;
+    font-size: 13px;
+    font-family: 'lato', sans-serif;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+.social-links{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.social-links a i{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    background: #0b1c35;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+}
+.social-links a:hover{
+    opacity: 0.7;
+}
+
+.built{
+    height: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #0b1c35;
+    position: absolute;
+    
+}
+.built .rights{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.built p{
+    display: flex;
+}
+.built a{
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+    .hero-info{
+        justify-content: center;
+        align-items: center;
+    }
+    .about-us{
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: row;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .about img{
+        width: 60%;
+        height: 100%;
+    }
+    .abstrategy img{
+        max-width: 50%;
+    }
+    .about-strategy{
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: row;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .about-strategy .as h1{
+        text-align: center;
+    }
+    .about-strategy p{
+        text-align: center;
+    }
+    .ges{
+        background: none;
+    }
+    .wcuu p{
+        width: 400px;
+    }
+   
+}
+
+
+
+@media only screen and (min-width: 1200px){
+    .hero-info p{
+        width: 400px;
+        text-align: start;
+    }
+    .about{
+        display: flex;
+        flex-direction: row;
+    }
+    .about h1{
+        text-align: center;
+    }
+    .about p{
+        text-align: center;
+    }
+    .about img{
+        width: 40%;
+    }
+    .abstrategy{
+        display: flex;
+        flex-direction: row;
+    }
+    .abstrategy img{
+        max-width: 30%;
+        margin-left: 200px;
+    }
+   
+    .ca img{
+        width: 20%;
+    }
+   .ca a:hover{
+    color: #006994;
+}
+    .gs p{
+       padding-left: 350px;
+        padding-right: 350px;
+    }
+    
+    .ges{
+        margin-top: 50px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        padding-left: 200px;
+    }
+   
+    .about__us{
+        
+    }
+    .ghelp{
+        margin-left: 30px;
+    }
+    .legal{
+        margin-left: 30px;
+    }
+    .contact-us{
+        margin-left: 30px;
+    }
+    .get{
+        display: flex;
+        background-image: linear-gradient(89.37deg, #006994 54.03%, rgba(255, 255, 255, 0) 99.73%),  url('images/businessman-hand-holding-throwing-virtual-dart-target-board-black-wall-business-investment-target-concept_50039-1488.jpg');
+        background-size: cover;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .getstarted p{
+        width: 400px;
+        text-align: start;
+    }
+    .wcu{
+        margin-top: 0px;
+    }
+    .wcuu{
+        display: grid;
+    }
+    .wcu1{
+        display: flex;
+        flex-direction: row;
+        margin-top: 60px;
+    }
+    .wcu2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .wcuu p{
+       width: 400px; 
+    }
+    .built{
+        margin-top: 140px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

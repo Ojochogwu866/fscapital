@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;900&family=Roboto:wght@300;900&display=swap');
+
+
+body{
+    background: #006994;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0b1c35;
+    display: flex;
+}
+
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #006994;
+}
+
+section .container{
+    position: relative;
+    width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+
+
+section .container .contact-info{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #0b1c35;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+section .container .contact-info h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+section .container .contact-info .info{
+    position: relative;
+    margin: 20px 0;
+}
+
+section .container .contact-info .info li{
+    position: relative;
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+    
+}
+
+section .container .contact-info .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+
+section .container .contact-info .info li span:nth-child(1) i{
+    max-width: 100%;
+    color: #fff;
+    font-size: 15px;
+}
+
+section .container .contact-info .info li .text{
+    color: #fff;
+    font-size: 15px;
+}
+
+section .container .contact-info .social-icons{
+    position: relative;
+    display: flex;
+}
+
+section .container .contact-info .social-icons li{
+    list-style: none;
+    margin-right: 15px;
+    padding-top: 150px;
+}
+
+section .container .contact-info .social-icons li a{
+    font-size: 15px;
+    color: #fff;
+}
+
+section .container .contact-info .social-icons li a:hover{
+    color: #fffdd0;
+    opacity: 0.6;
+}
+
+section .container .contactform{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fffdd0;
+    width: calc(100% - 150px);
+    margin-left: 150px;
+    padding-left: 250px;
+    height: 100%;
+}
+
+section .container .contactform h2{
+    color: #0b1c35;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+section .container .contactform .formbx{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+section .container .contactform .formbx .inputbx{
+    position: relative;
+    margin: 0, 0, 35px, 0;
+    
+}
+
+section .container .contactform.formbx .inputbx.w50{
+    width: 40%;
+}
+
+section .container .contactform .formbx .inputbx.w100{
+   width: 100%;
+   margin-top: 30px;
+}
+
+section .container .contactform .formbx .inputbx input,
+section .container .contactform .formbx .inputbx textarea{
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #0b1c35;
+    background: transparent;
+    outline: none;
+}
+
+section .container .contactform .formbx .inputbx textarea{
+    height: 120px;
+}
+
+section .container .contactform .formbx .inputbx span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+section .container .contactform .formbx .inputbx input:focus ~ span,
+section .container .contactform .formbx .inputbx textarea:focus ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    color: darkred;
+}
+section .container .contactform .formbx .inputbx input:valid ~ span,
+section .container .contactform .formbx .inputbx textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    color: darkred;
+}
+section .container .contactform .formbx .inputbx button{
+    background: #0b1c35;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #0b1c35;
+    color: #fff;
+    cursor: pointer;
+}
+section .container .contactform .formbx .inputbx button i{
+    margin-right: 5px;
+}
+section .container .contactform .formbx .inputbx button:hover{
+    color: #006994;
+    opacity: 0.8;
+}
+.h2{
+    display: none;
+}
+
+
+
+@media (max-width: 991px){
+    section{
+        background: #006994;
+    }
+    
+    section .container{
+        max-width: 400px;
+        position: absolute;
+        
+    }
+    section .container .contact-info{
+        top: 600px;
+        width: 100%;
+        
+    }
+    section .container .contactform{
+        width: 100%;
+        display: flex;
+        padding: 40px;
+        margin: 0;
+        
+    }
+    
+    section .container .contactform h2{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+}
