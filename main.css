@@ -99,7 +99,7 @@ nav{
 }
 @media screen and (max-width: 768px){
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .navlinks{
         position: absolute;
@@ -114,7 +114,7 @@ nav{
         width: 60%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        overflow: hidden;
+     
     }
     
     .burger{
