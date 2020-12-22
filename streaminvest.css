@@ -294,7 +294,7 @@
 }
 .det p{
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 22px;
     color: #0b1c35;
     text-align: center;
@@ -305,25 +305,25 @@
 .invest{
     height: 330px;
     padding: 10px;
-    max-width: 400px;
+    max-width: 500px;
     background: #ffb74d;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .chillax{
     height: 330px;
-    padding: 10px;
-    max-width: 400px;
+    padding: 8px;
+    max-width: 500px;
     background: #ffb74d;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .rp{
     height: 330px;
     padding: 20px;
-    max-width: 400px;
+    max-width: 500px;
     background: #ffb74d;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 
