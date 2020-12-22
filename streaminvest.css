@@ -496,6 +496,8 @@
     .carousel-caption h5{
         font-size: 70px;
     }
+    .carousel-item{
+        height: 60vh;
 }
 
 
