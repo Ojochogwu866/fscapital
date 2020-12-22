@@ -1,27 +1,8 @@
-    const navSlide= () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.navlinks');
-    const navLinks = document.querySelector('.navlinks li');
-    
-    burger.addEventListener('click',()=>{
-        
-        nav.classList.toggle('nav-active');
-        
-        
-        //animatelinks
-        
-     navLinks.forEach((link, index) => {
-        if(link.style.animation){
-            link.style.animate='';
-        }else{
-           link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1.5}s`; 
-        }
-        
-       });
-        
-        //burgeranimation
-        burger.classList.toggle('toggle');
-    });
-}
+const hamburger_icon = document.querySelector('#nav-bar .nav-bar .nav-list .hamburger');
+const nav_list = document.querySelector('#nav-bar .nav-bar .nav-list');
 
-navSlide();
+
+hamburger_icon.addEventListener('click', () => {
+    nav_list.classList.toggle('open');
+    hamburger_icon.classList.toggle('active');
+});
