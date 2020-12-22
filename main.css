@@ -227,7 +227,7 @@
     font-size: 16px;
     color: #fff;
 }
-.hero button{
+.hero .button{
     width: 150px;
     height: 40px;
     text-align: center;
@@ -240,8 +240,14 @@
     cursor: pointer;
     outline: none;
     font-family: 'Poppins', sans-serif;
+    padding: 8px;
+    font-size: 15px;
 }
-.hero button:hover{
+.hero a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.hero a:hover{
     background: darkred;
     opacity: 0.5;
     color: #fff;
