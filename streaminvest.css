@@ -305,7 +305,7 @@
 .invest{
     height: 330px;
     padding: 10px;
-    max-width: 500px;
+    width: 500px;
     background: #ffb74d;
     margin-top: 20px;
 }
@@ -313,7 +313,7 @@
 .chillax{
     height: 330px;
     padding: 8px;
-    max-width: 500px;
+    width: 500px;
     background: #ffb74d;
     margin-top: 20px;
 }
@@ -321,7 +321,7 @@
 .rp{
     height: 330px;
     padding: 20px;
-    max-width: 500px;
+    width: 500px;
     background: #ffb74d;
     margin-top: 20px;
 }
