@@ -526,6 +526,8 @@
     .rp{
         margin-left: 30px;
     }
+    .carousel-item{
+        height: 70vh;
     .footer{
     display: flex;
     flex-direction: row;
