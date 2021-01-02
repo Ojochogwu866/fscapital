@@ -59,7 +59,7 @@ section .container .user .registerformbx{
 section .container .user .registerformbx .img img{
     width: 50%;
     text-align: center;
-    margin-top: -40px;
+    margin-top: -30px;
     margin-left: 50px;
 }
 section .container .user .registerformbx form h2{
