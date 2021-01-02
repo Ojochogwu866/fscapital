@@ -201,6 +201,8 @@
     }
     .nav-bar .brand img{
         width: 100%;
+        object-fit: cover;
+        object-position: none;
     }
 }
 
