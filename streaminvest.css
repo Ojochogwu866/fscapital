@@ -34,7 +34,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
 }
 
 .nav-bar .nav-list{
@@ -43,6 +42,7 @@
     justify-content: center;
     margin-top: 0px;
     text-align: center;
+    width: 100%;
 }
 .nav-bar .nav-list.open ul{
     transform: translateY(0);
@@ -59,7 +59,7 @@
     cursor: pointer;
     margin-top: 10px;
     transition: .3s ease transform;
-    margin-right: -100px;
+    margin-right: -50px;
    
 }
 
@@ -112,7 +112,7 @@
     left: 0;
     background-color: #0b1c35;
     transform: translateY(-100%);
-    transition: .3s ease transform;
+    transition: .7s ease transform;
     padding: 5rem 0;
     text-align: center;
     justify-content: space-around;
@@ -131,6 +131,13 @@
     padding: 0.8rem 0.8rem;
     
     
+}
+.nav-bar .brand img{
+    position: relative;
+    width: 80%;
+    object-fit: cover;
+    object-position: right;
+    height: 60px;
 }
 .nav-bar .nav-list ul li a:hover{
     color: #006994;
@@ -169,15 +176,13 @@
     padding: 5px;
 }
 
-@media only screen and (min-width: 768px){
-   
+@media only screen and (min-width: 1020px){
      .nav-bar .nav-list .hamburger{
         display: none;
     }
     .nav-bar{
         width: 100%;
         height: 70px;
-       
     }
     .nav-bar .nav-list ul{
         transform: translateX(0);
@@ -188,6 +193,9 @@
     .nav-bar .nav-list ul li{
         display: inline-block;
 
+    }
+     .nav-bar .brand img{
+        width: 60%;
     }
 }
 
@@ -365,6 +373,7 @@
     padding: 40px;
     margin-top: 50px;
 }
+
 .about__us h3{
     font-size: 20px;
     color: #0b1c35;
@@ -528,15 +537,16 @@
     }
     .carousel-item{
         height: 70vh;
+    }
     .footer{
-    display: flex;
-    flex-direction: row;
-    margin-top: 0px;
-    padding-left: 200px;
+        display: flex;
+        flex-direction: row;
+        padding-left: 200px;
     }
    
     .about__us{
-        
+        margin-top: 0px;
+        margin-left: 100px;
     }
     .ghelp{
         margin-left: 30px;
@@ -549,5 +559,7 @@
     }
      .built{
         margin-top: 140px;
+        margin-left: 100px;
+        
     }
 }
