@@ -59,7 +59,7 @@ section .container .user .registerformbx{
 section .container .user .registerformbx .img img{
     width: 50%;
     text-align: center;
-    margin-top: -90px;
+    margin-top: -70px;
     margin-left: 50px;
 }
 section .container .user .registerformbx form h2{
@@ -71,7 +71,7 @@ section .container .user .registerformbx form h2{
     width: 100%;
     margin-bottom: 10px;
     color: #006994;
-    margin-top: -50px;
+    margin-top: -30px;
 }
 section .container .user .registerformbx form input{
     position: relative;
@@ -121,7 +121,7 @@ section .container .user .registerformbx form input[type='submit']:hover{
 }
 section .container .user .registerformbx form .signin{
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 12px;
     letter-spacing: 1px;
     color: #555;
