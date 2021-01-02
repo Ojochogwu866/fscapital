@@ -56,6 +56,12 @@ section .container .user .formbx{
     padding: 40px;
     transition: 0.5s;
 }
+section .container .user .formbx .img img{
+    width: 70%;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: -50px;
+}
 section .container .user .formbx form h2{
     font-size: 20px;
     font-weight: 700;
