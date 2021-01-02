@@ -56,6 +56,11 @@ section .container .user .registerformbx{
     padding: 40px;
     transition: 0.5s;
 }
+section .container .user .registerformbx .img img{
+    width: 70%;
+    text-align: center;
+    margin-top: -90px;
+}
 section .container .user .registerformbx form h2{
     font-size: 20px;
     font-weight: 700;
