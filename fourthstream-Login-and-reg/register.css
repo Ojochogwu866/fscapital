@@ -121,7 +121,7 @@ section .container .user .registerformbx form input[type='submit']:hover{
 }
 section .container .user .registerformbx form .signin{
     position: relative;
-    margin-top: 20px;
+    margin-top: -15px;
     font-size: 12px;
     letter-spacing: 1px;
     color: #555;
