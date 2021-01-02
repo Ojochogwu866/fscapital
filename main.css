@@ -174,7 +174,7 @@
 }
 .nav-bar .brand img{
     position: relative;
-    width: 80%;
+    width: 200px;
     object-fit: cover;
     object-position: right;
     height: 60px;
