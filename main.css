@@ -46,6 +46,7 @@
     justify-content: center;
     margin-top: 0px;
     text-align: center;
+    width: 100%;
 }
 .nav-bar .nav-list.open ul{
     transform: translateY(0);
@@ -62,7 +63,7 @@
     cursor: pointer;
     margin-top: 10px;
     transition: .3s ease transform;
-    margin-right: -100px;
+    margin-right: -50px;
    
 }
 
@@ -115,7 +116,7 @@
     left: 0;
     background-color: #0b1c35;
     transform: translateY(-100%);
-    transition: .3s ease transform;
+    transition: .7s ease transform;
     padding: 5rem 0;
     text-align: center;
     justify-content: space-around;
@@ -171,16 +172,22 @@
     height: 40px;
     padding: 5px;
 }
+.nav-bar .brand img{
+    position: relative;
+    width: 80%;
+    object-fit: cover;
+    object-position: right;
+    height: 60px;
+}
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1020px){
    
      .nav-bar .nav-list .hamburger{
         display: none;
     }
     .nav-bar{
         width: 100%;
-        height: 70px;
-       
+        height: 70px; 
     }
     .nav-bar .nav-list ul{
         transform: translateX(0);
@@ -191,6 +198,9 @@
     .nav-bar .nav-list ul li{
         display: inline-block;
 
+    }
+    .nav-bar .brand img{
+        width: 60%;
     }
 }
 
@@ -265,7 +275,7 @@
     overflow: hidden;
 }
 .about h1{
-    text-align: start;
+    text-align: center;
     font-size: 30px;
     line-height: 30px;
     font-family: 'Poppins', sans-serif;
@@ -279,6 +289,7 @@
     font-size: 15px;
     line-height: 28px;
     text-align: start;
+    text-align: center;
 }
 .about img{
     width: 100%;
@@ -290,7 +301,7 @@
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    background-color: #006994;
+    
 }
 .abstrategy img{
     max-width: 80%;
@@ -356,7 +367,7 @@
     padding: 40px;
     text-align: center;
     height: auto;
-    background-color: #006994;
+    background-color: transparent;
     
 }
 .gs h3{
@@ -451,13 +462,14 @@
     color: #0b1c35;
 }
 .riskm h2 i{
-    color: #0b1c35;
+    color: #f9712e;
     padding-right: 10px;
     
 }
 .riskm p{
   font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    text-align: center;
     line-height: 28px;
     color: #0b1c35;
     font-weight: 500;
@@ -765,6 +777,7 @@
     }
     .about p{
         text-align: center;
+
     }
     .about img{
         width: 40%;
@@ -850,25 +863,3 @@
         flex-direction: row;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
