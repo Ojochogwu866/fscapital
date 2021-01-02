@@ -21,6 +21,7 @@ section .container{
     background: #fff;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    margin-top: 100px;
 }
 section .container .user{
     position: absolute;
@@ -56,11 +57,11 @@ section .container .user .formbx{
     padding: 40px;
     transition: 0.5s;
 }
-section .container .user .formbx .img img{
-    width: 70%;
-    text-align: center;
-    margin-left: 30px;
-    margin-top: -50px;
+section .images img{
+    position: absolute;
+    width: 20%;
+    margin-top: -320px;
+    margin-left: 260px;
 }
 section .container .user .formbx form h2{
     font-size: 20px;
@@ -123,3 +124,8 @@ section .container .user .formbx form .signup a{
     section .container .user .formbx{
         width: 100%;
     }
+        section .images img{
+        width: 300px;
+        margin-left: 50px;
+    }
+}
