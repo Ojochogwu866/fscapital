@@ -59,7 +59,7 @@ section .container .user .formbx{
 section .container .user .formbx .img img{
     width: 70%;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: -50px;
 }
 section .container .user .formbx form h2{
