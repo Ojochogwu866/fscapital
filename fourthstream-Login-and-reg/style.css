@@ -126,6 +126,6 @@ section .container .user .formbx form .signup a{
     }
         section .images img{
         width: 200px;
-        margin-left: 0px;
+        margin-left: 20px;
     }
 }
