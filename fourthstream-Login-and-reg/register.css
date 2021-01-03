@@ -151,8 +151,8 @@ section .container .user .registerformbx form .signin a{
         width: 100%;
     }
     section .images img{
-        width: 300px;
-        margin-left: 0px;
+        width: 200px;
+        margin-left: 50px;
     }
 }
 
