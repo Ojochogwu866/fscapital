@@ -59,8 +59,8 @@ section .container .user .formbx{
 }
 section .images img{
     position: absolute;
-    width: 20%;
-    margin-top: -320px;
+    width: 15%;
+    margin-top: -280px;
     margin-left: 260px;
 }
 section .container .user .formbx form h2{
