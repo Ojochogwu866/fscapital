@@ -59,8 +59,8 @@ section .container .user .formbx{
 }
 section .images img{
     position: absolute;
-    width: 15%;
-    margin-top: -280px;
+    width: 20%;
+    margin-top: -320px;
     margin-left: 260px;
 }
 section .container .user .formbx form h2{
@@ -125,7 +125,7 @@ section .container .user .formbx form .signup a{
         width: 100%;
     }
         section .images img{
-        width: 300px;
+        width: 200px;
         margin-left: 0px;
     }
 }
